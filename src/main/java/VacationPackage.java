@@ -54,17 +54,19 @@ if(destination.toUpperCase().equals("Paris")) {
 		}
 		return additionalCost + this.baseCost;	
 	}
-	
+
 	public void validateTravelers(int travelers) {
 		if (travelers > 80) {
-			System.out.println("The vacation package is not available for groups of more than 80 persons");	
+System.out.println(
+"The vacation package is not available for groups of more than 80 persons"
+);
 		}
 	}
-
+ 
 	public void estimateCost(double additionalCost, int travelers, int duration) {
 		double discount = 0;
 		double fee = 200;
-		if(travelers>4 && travelers <10) {
+		if ((travelers > 4) && (travelers  < 10)) {
 			discount = additionalCost*0.10;
 			this.totalCost = additionalCost - discount;	
 		}
@@ -73,7 +75,7 @@ if(destination.toUpperCase().equals("Paris")) {
 			this.totalCost = additionalCost - discount;	
 		}
 		if(duration<7) {
-			this.totalCost = additionalCost + fee;	
+			this.totalCost = additionalCost + fee;
 		}
 		if(duration>30 || travelers == 2) {
 			this.totalCost = additionalCost - fee;

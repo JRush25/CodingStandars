@@ -17,7 +17,7 @@ if (package1.getNumberofTravelers() > 80) {
 System.out.println(
 "The vacation package is not available for groups of more than 80 persons"
 );
-		} else {
+} else {
 double additionalCost = package1.validateDestination(package1.getTouristSpot());
 package1.estimateCost(additionalCost, package1.getNumberofTravelers(), package1.getDuration());
 System.out.println("The total cost of the vacation package is " + package1.getTotalCost());
