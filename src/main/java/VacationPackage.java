@@ -1,54 +1,52 @@
 
 public class VacationPackage {
-	private String touristSpot;
-	private int numberofTravelers;
-	private int duration;
-	private double baseCost = 1000;
-	private double totalCost = 0;
-	
-	
-	
-	
-	public VacationPackage() {
+
+private String touristSpot;
+private int numberofTravelers;
+private int duration;
+private double baseCost = 1000;
+private double totalCost = 0;
+
+public VacationPackage() {
 	}
 	
-	public String getTouristSpot() {
+public String getTouristSpot() {
 		return touristSpot;
 	}
-	public void setTouristSpot(String touristSpot) {
+public void setTouristSpot(String touristSpot) {
 		this.touristSpot = touristSpot;
 	}
-	public int getNumberofTravelers() {
+public int getNumberofTravelers() {
 		return numberofTravelers;
 	}
-	public void setNumberofTravelers(int numberofTravelers) {
+public void setNumberofTravelers(int numberofTravelers) {
 		this.numberofTravelers = numberofTravelers;
 	}
-	public int getDuration() {
+public int getDuration() {
 		return duration;
 	}
-	public void setDuration(int duration) {
+public void setDuration(int duration) {
 		this.duration = duration;
 	}
-	public double getBaseCost() {
+public double getBaseCost() {
 		return baseCost;
 	}
-	public void setBaseCost(double baseCost) {
+public void setBaseCost(double baseCost) {
 		this.baseCost = baseCost;
 	}
-	public double getTotalCost() {
+public double getTotalCost() {
 		if (totalCost == 0){
 			return -1;
 		}
 		return totalCost;
 	}
-	public void setTotalCost(double totalCost) {
+public void setTotalCost(double totalCost) {
 		this.totalCost = totalCost;
 	}
-	
-	public double validateDestination(String destination) {
+
+public double validateDestination(String destination) {
 		double additionalCost = 0;
-		if(destination.toUpperCase().equals("Paris")) {
+if(destination.toUpperCase().equals("Paris")) {
 			additionalCost = 500+ this.baseCost;
 		}
 		else if(destination.toUpperCase().equals("New York City")) {
@@ -62,7 +60,7 @@ public class VacationPackage {
 			System.out.println("The vacation package is not available for groups of more than 80 persons");	
 		}
 	}
-	
+
 	public void estimateCost(double additionalCost, int travelers, int duration) {
 		double discount = 0;
 		double fee = 200;
