@@ -1,0 +1,26 @@
+src/main/java/VacationCostEstimator.java:6:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/VacationCostEstimator.java:6:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/VacationPackage.java:8:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'totalCost'
+src/main/java/VacationPackage.java:8:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'totalCost'
+src/main/java/VacationPackage.java:19:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/VacationPackage.java:19:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/VacationPackage.java:56:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/VacationPackage.java:56:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/VacationPackage.java:58:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/main/java/VacationPackage.java:58:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/main/java/VacationPackage.java:58:	UseLocaleWithCaseConversions:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/main/java/VacationPackage.java:58:	UseLocaleWithCaseConversions:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/main/java/VacationPackage.java:61:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/main/java/VacationPackage.java:61:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/main/java/VacationPackage.java:61:	UseLocaleWithCaseConversions:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/main/java/VacationPackage.java:61:	UseLocaleWithCaseConversions:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/main/java/VacationPackage.java:67:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/VacationPackage.java:67:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/VacationPackage.java:76:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/VacationPackage.java:76:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/VacationPackage.java:77:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'discount' is never used (overwritten on lines 80 and 84)
+src/main/java/VacationPackage.java:77:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'discount' is never used (overwritten on lines 80 and 84)
+src/main/java/VacationPackage.java:98:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/VacationPackage.java:98:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/VacationPackage.java:100:	SwitchStmtsShouldHaveDefault:	SwitchStmtsShouldHaveDefault: Switch statements should be exhaustive, add a default case (or missing enum branches)
+src/main/java/VacationPackage.java:100:	SwitchStmtsShouldHaveDefault:	SwitchStmtsShouldHaveDefault: Switch statements should be exhaustive, add a default case (or missing enum branches)

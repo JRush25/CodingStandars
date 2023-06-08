@@ -1,3 +1,4 @@
+import java.util.Locale;
 
 public class VacationPackage {
 
@@ -5,7 +6,7 @@ private String touristSpot;
 private int numberofTravelers;
 private int duration;
 private double baseCost = 1000;
-private double totalCost = 0;
+private double totalCost;
 private int addOn;
 
 public int getAddOn() {
@@ -15,7 +16,9 @@ public int getAddOn() {
 public void setAddOn(int addOn) {
 	this.addOn = addOn;
 }
-
+/**
+ *VacationPackage Constructor
+ */	
 public VacationPackage() {
 	}
 	
@@ -52,18 +55,22 @@ public double getTotalCost() {
 public void setTotalCost(double totalCost) {
 		this.totalCost = totalCost;
 	}
-
+/**
+ *validateDestination Method
+ */	
 public double validateDestination(String destination) {
 		double additionalCost = 0;
-if(destination.toUpperCase().equals("Paris")) {
+if(("Paris").equals(destination.toUpperCase(Locale.getDefault()))) {
 			additionalCost = 500+ this.baseCost;
 		}
-		else if(destination.toUpperCase().equals("New York City")) {
+		else if(("New York City").equals(destination.toUpperCase(Locale.getDefault()))) {
 			additionalCost = 600+ this.baseCost;
 		}
 		return additionalCost + this.baseCost;	
 	}
-
+/**
+ *validateTravelers Method
+ */	
 	public void validateTravelers(int travelers) {
 		if (travelers > 80) {
 System.out.println(
@@ -72,9 +79,11 @@ System.out.println(
 		}
 	}
  
-
+	/**
+	 *estimateCost Method
+	 */		
 	public void estimateCost(double additionalCost, int travelers, int duration) {
-		double discount = 0;
+		double discount;
 		double fee = 200;
 		if ((travelers > 4) && (travelers  < 10)) {
 			discount = additionalCost*0.10;
@@ -94,7 +103,9 @@ System.out.println(
 			this.totalCost = this.baseCost;
 		}
 	}
-	
+	/**
+	 *TotalPlusAddOn Method
+	 */		
 	public void TotalPlusAddOn(int addon, int travelers) {
 		double addonCost = 0;
 		switch (addon){
@@ -108,6 +119,9 @@ System.out.println(
 			addonCost = 100*travelers;
 			break;
 		case 4:
+			addonCost = 0;
+			break;
+		default:
 			addonCost = 0;
 			break;
 		}

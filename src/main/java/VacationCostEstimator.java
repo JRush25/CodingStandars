@@ -1,8 +1,11 @@
 import java.util.Scanner;
 
+
 public class VacationCostEstimator {
 
-//CHECKSTYLE:OFF
+	/**
+	 *Main Method
+	 */	
 public static void main(String[] args) {
 	VacationPackage package1 = new VacationPackage();
 	Scanner sc = new Scanner(System.in);
@@ -31,5 +34,4 @@ System.out.println("The total cost of the vacation package is " + package1.getTo
 		}
 
 	}
-//CHECKSTYLE:ON
 }
