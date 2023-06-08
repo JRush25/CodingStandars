@@ -6,6 +6,15 @@ private int numberofTravelers;
 private int duration;
 private double baseCost = 1000;
 private double totalCost = 0;
+private int addOn;
+
+public int getAddOn() {
+	return addOn;
+}
+
+public void setAddOn(int addOn) {
+	this.addOn = addOn;
+}
 
 public VacationPackage() {
 	}
@@ -63,6 +72,7 @@ System.out.println(
 		}
 	}
  
+
 	public void estimateCost(double additionalCost, int travelers, int duration) {
 		double discount = 0;
 		double fee = 200;
@@ -83,6 +93,25 @@ System.out.println(
 		else {
 			this.totalCost = this.baseCost;
 		}
+	}
+	
+	public void TotalPlusAddOn(int addon, int travelers) {
+		double addonCost = 0;
+		switch (addon){
+		case 1:
+			addonCost = 200*travelers;
+			break;
+		case 2:
+			addonCost = 150*travelers;
+			break;
+		case 3:
+			addonCost = 100*travelers;
+			break;
+		case 4:
+			addonCost = 0;
+			break;
+		}
+		this.totalCost = this.totalCost+addonCost;
 	}
 	
 
